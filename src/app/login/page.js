@@ -1,8 +1,17 @@
+import React from 'react';
+import { config } from '@/config';
+import { Layout } from '@/components/auth/layout';
+// import SignInMiddleware from './sign-in-middleware';
+import { Login } from '@/components/auth/login';
+
+export const metadata = { 
+  title: `Sign in | Auth | ${config.site.name}` 
+};
+
 export default function Page() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-white text-gray-900">
-      <h1 className="text-4xl font-bold mb-4">Login</h1>
-     
-    </main>
+    <Layout>
+      <Login /> 
+    </Layout>
   );
 }
