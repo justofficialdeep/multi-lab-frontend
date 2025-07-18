@@ -1,5 +1,4 @@
-import * as React from 'react';
-import type { Metadata } from 'next';
+import React from 'react';
 import RouterLink from 'next/link';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -10,9 +9,9 @@ import { ArrowLeftIcon } from '@phosphor-icons/react/dist/ssr/ArrowLeft';
 import { config } from '@/config';
 import { paths } from '@/paths';
 
-export const metadata = { title: `Not found | ${config.site.name}` } satisfies Metadata;
+export const metadata = { title: `Not found | ${config.site.name}` };
 
-export default function NotFound(): React.JSX.Element {
+export default function NotFound() {
   return (
     <Box component="main" sx={{ alignItems: 'center', display: 'flex', justifyContent: 'center', minHeight: '100%' }}>
       <Stack spacing={3} sx={{ alignItems: 'center', maxWidth: 'md' }}>
@@ -25,7 +24,7 @@ export default function NotFound(): React.JSX.Element {
           />
         </Box>
         <Typography variant="h3" sx={{ textAlign: 'center' }}>
-          404: The page you are looking for isn&apos;t here
+          404: Sorry, the page you are looking for isn&apos;t here
         </Typography>
         <Typography color="text.secondary" variant="body1" sx={{ textAlign: 'center' }}>
           You either tried some shady route or you came here by mistake. Whichever it is, try using the navigation

@@ -1,5 +1,4 @@
-import * as React from 'react';
-import type { Metadata } from 'next';
+import React from 'react';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
@@ -8,9 +7,9 @@ import { config } from '@/config';
 import { AccountDetailsForm } from '@/components/dashboard/account/account-details-form';
 import { AccountInfo } from '@/components/dashboard/account/account-info';
 
-export const metadata = { title: `Account | Dashboard | ${config.site.name}` } satisfies Metadata;
+export const metadata = { title: `Account | Dashboard | ${config.site.name}` }
 
-export default function Page(): React.JSX.Element {
+export default function Page(){
   return (
     <Stack spacing={3}>
       <div>
