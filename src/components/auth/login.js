@@ -141,7 +141,7 @@ export function Login() {
               </FormControl>
 
           <div>
-            <Link component={RouterLink} href={paths.auth.resetPassword} variant="subtitle2">
+            <Link component={RouterLink} href={paths.auth.signUp} variant="subtitle2">
               Forgot password?
             </Link>
           </div>
