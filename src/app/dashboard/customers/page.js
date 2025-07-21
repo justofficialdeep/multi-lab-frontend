@@ -2,7 +2,8 @@ import React from 'react';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { config } from '@/config';
-import { CustomersTable } from '@/components/dashboard/Customer/customers-table';
+import { CustomersTable } from '@/components/dashboard/customer/customers-table';
+
   
   export const metadata = { title: `Settings | Customers | ${config.site.name}` }
   
