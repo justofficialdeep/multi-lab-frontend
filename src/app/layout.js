@@ -1,5 +1,7 @@
 import React from 'react';
 import '@/styles/global.css';
+import '@/styles/sn.scss';
+import AppContent from './app-content';
 
 import { LocalizationProvider } from '@/components/core/localization-provider';
 import { ThemeProvider } from '@/components/core/theme-provider/theme-provider';
@@ -14,7 +16,11 @@ export default function Layout({ children }) {
     <html lang="en">
       <body>
         <LocalizationProvider>
-          <ThemeProvider>{children}</ThemeProvider>
+          <ThemeProvider>
+              <AppContent>
+                {children}
+              </AppContent>
+            </ThemeProvider>
         </LocalizationProvider>
       </body>
     </html>

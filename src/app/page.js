@@ -1,3 +1,7 @@
+import RouterLink from 'next/link';
+import Link from '@mui/material/Link';
+import { paths } from '@/paths';
+
 export default function Page() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-white text-gray-900">
@@ -7,10 +11,10 @@ export default function Page() {
       </p>
       <div className="flex space-x-4">
         <button className="px-6 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition">
-          Get Started
+          <Link component={RouterLink} href={paths.dashboard.overview}>Get Started</Link>
         </button>
         <button className="px-6 py-2 border border-blue-600 text-blue-600 rounded-xl hover:bg-blue-50 transition">
-          Learn More  
+          <Link component={RouterLink} href={paths.auth.signIn}>Login Now</Link>
         </button>
       </div>
     </main>
