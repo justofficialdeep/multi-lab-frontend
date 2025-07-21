@@ -21,7 +21,7 @@ export function Login() {
 
   // const { loginAuth } = useAuth();
   const [showPassword, setShowPassword] = useState(false); //show hide the password
-  const [isPending, setIsPending] = useState(false);
+  // const [isPending, setIsPending] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' }); 
   const [errors, setErrors] = useState({ email: '', password: '' }); //display errors
   const [invaliddetails, setinvaliDetails] = useState('');
@@ -148,7 +148,7 @@ export function Login() {
 
           {/* {errors.root && <Alert color="error">{errors.root.message}</Alert>} */}
 
-          <Button disabled={isPending} type="submit" variant="contained">
+          <Button type="submit" variant="contained">
             Sign in
           </Button>
         </Stack>

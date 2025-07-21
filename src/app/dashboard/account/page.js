@@ -14,7 +14,7 @@ export default function Page(){
     <Stack spacing={3}>
       <div>
         <Typography variant="h4">Account</Typography>
-      </div>
+      </div> 
       <Grid container spacing={3}>
         <Grid
           size={{
